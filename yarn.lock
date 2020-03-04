@@ -2244,7 +2244,7 @@ babel-preset-gatsby@^0.2.27:
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
-babel-runtime@^6.26.0:
+babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -4988,6 +4988,13 @@ extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
   integrity sha1-lpGEQOMEGnpBT4xS48V06zw+HgU=
+
+fakerest@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/fakerest/-/fakerest-2.1.0.tgz#f66d0b8fbae7455efa7c666e3f6cdeec70a83860"
+  integrity sha512-c5x7iayu46Qa/h/W7k3PJiElNc56yxCkWY4mxs38be/D9YNfQSy8fn8xtlIPYGIUxDHAcpmVF9YXrA/SqJp1cA==
+  dependencies:
+    babel-runtime "^6.22.0"
 
 fast-deep-equal@^3.1.1:
   version "3.1.1"
@@ -9959,12 +9966,12 @@ ra-core@^3.2.3:
     recompose "~0.26.0"
     reselect "~3.0.0"
 
-ra-data-simple-rest@^3.2.2:
+ra-data-fakerest@^3.2.2:
   version "3.2.2"
-  resolved "https://registry.yarnpkg.com/ra-data-simple-rest/-/ra-data-simple-rest-3.2.2.tgz#8bc266b446bfb0212d1c02a76688300179a60362"
-  integrity sha512-lquW7bBHv112yfA11tIsX+31AZ0kOwbqldrCOtbWWvVxwd0DhVeZX731FLg9WY+o0hYd+TZF7dnmUlXqyJo0dQ==
+  resolved "https://registry.yarnpkg.com/ra-data-fakerest/-/ra-data-fakerest-3.2.2.tgz#204268eefdaa824396e121465cedf944da7da644"
+  integrity sha512-v4q8vIHQpraOu2nHV183O21dAjfsFAOskztSmM3MhxZaITRYTq/h0rM55dTnncPXI4+TE1Z3eUCS0ROwj+8KaQ==
   dependencies:
-    query-string "^5.1.1"
+    fakerest "~2.1.0"
 
 ra-i18n-polyglot@^3.2.3:
   version "3.2.3"
